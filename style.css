@@ -1,0 +1,116 @@
+body{
+    text-align: center;
+    background-color: aqua;
+}
+
+h1{
+    font-size: 60px;
+    text-align: center;
+    background-color: crimson;
+    padding: 20px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+label{
+    font-size: 38;
+    font-family:sans-serif;
+}
+
+table,th,td{
+    font-size: 30;
+    text-align: center;
+    padding: 20;
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th{
+    background-color: blue;
+    color: white;
+}
+
+td{
+    font-size: 20;
+    background-color: lightgray;
+    text-align: center;
+}
+
+.box{
+    padding-bottom: 30px;
+}
+
+.Well-Parked,.Half-Parked,.Badly-Parked,.row-names{
+
+    text-align: center;
+    height:auto;
+    width: 150;
+    display:inline-block;
+
+}
+
+.Well-Parked{
+    background-color: green;
+}
+
+.Half-Parked{
+    background-color: yellow;
+}
+
+.Badly-Parked{
+    background-color: red;
+}
+
+.row-names{
+    width: auto;
+}
+.row-headers{
+    padding-bottom: 400px;
+}
+.btn-general{
+    font-size: 100px;
+    text-align: center;
+    padding: 10 50 10 50;
+}
+
+
+#segment-el,#street-name-el{
+    font-size: 30;
+}
+
+#WP_fiets-increment-btn,#WP_DEEL-fiets-increment-btn,#WP_scooter-increment-btn,#WP_DEEL-scooters-increment-btn{
+    padding-left: 39px;
+    padding-right: 39px;
+    background-color: lightgreen;
+}
+
+#HP_fiets-increment-btn,#HP_DEEL-fiets-increment-btn,#HP_scooter-increment-btn,#HP_DEEL-scooters-increment-btn{
+    padding-left: 39px;
+    padding-right: 39px;
+    background-color: lightgreen;
+}
+
+#BP_fiets-increment-btn,#BP_DEEL-fiets-increment-btn,#BP_scooter-increment-btn,#BP_DEEL-scooters-increment-btn{
+    padding-left: 39px;
+    padding-right: 39px;
+    background-color: lightgreen;
+}
+#WP_fiets-decrement-btn,#WP_DEEL-fiets-decrement-btn,#WP_scooter-decrement-btn,#WP_DEEL-scooters-decrement-btn{
+
+    background-color: lightcoral;
+}
+
+#HP_fiets-decrement-btn,#HP_DEEL-fiets-decrement-btn,#HP_scooter-decrement-btn,#HP_DEEL-scooters-decrement-btn{
+
+    background-color: lightcoral;
+}
+
+#BP_fiets-decrement-btn,#BP_DEEL-fiets-decrement-btn,#BP_scooter-decrement-btn,#BP_DEEL-scooters-decrement-btn{
+
+    background-color: lightcoral;
+}

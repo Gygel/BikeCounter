@@ -1,0 +1,148 @@
+<html>
+    <head>
+        <title>Bicycle counter</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <h1>Bicycle counter</h1>
+
+            <div class="box">
+                <label><b>Segment</b></label>
+                <input type="text" id="segment-el"><br>
+            </div>
+            <div class="box">
+                <label><b>Street name</b></label>
+                <input type="text" id="street-name-el"><br>
+            </div>
+        <div class="row-names">
+            <h2 class="row-headers">Fiets</h2>
+            <h2 class="row-headers">DEEL-fiets</h2>
+            <h2 class="row-headers">Brom-/snorfiets/scooters</h2>
+            <h2 class="row-headers">DEEL-scooters</h2>
+        </div>
+
+        <div class="Well-Parked">
+            <h2>Well parked</h2>
+            <div class="box">
+                <h2 id="WP_fiets-counter-h">0</h2>
+                <button class="btn-general" id="WP_fiets-increment-btn" onclick="increment('WP_fiets-counter-h')">+</button>
+                <button class="btn-general" id="WP_fiets-decrement-btn" onclick="decrement('WP_fiets-counter-h')">-</button>
+            </div>
+
+            <div class="box">
+                <h2 id="WP_DAAL-fiets-counter-h">0</h2>
+                <button class="btn-general" id="WP_DEEL-fiets-increment-btn" onclick="increment('WP_DAAL-fiets-counter-h')">+</button>
+                <button class="btn-general" id="WP_DEEL-fiets-decrement-btn" onclick="decrement('WP_DAAL-fiets-counter-h')">-</button>
+            </div>
+
+            <div class="box">
+                <h2 id="WP_scooters-counter-h">0</h2>
+                <button class="btn-general" id="WP_scooter-increment-btn" onclick="increment('WP_scooters-counter-h')">+</button>
+                <button class="btn-general" id="WP_scooter-decrement-btn" onclick="decrement('WP_scooters-counter-h')">-</button>
+            </div>
+
+            <div class="box">
+                <h2 id="WP_DEEL-scooters-counter-h">0</h2>
+                <button class="btn-general" id="WP_DEEL-scooters-increment-btn" onclick="increment('WP_DEEL-scooters-counter-h')">+</button>
+                <button class="btn-general" id="WP_DEEL-scooters-decrement-btn" onclick="decrement('WP_DEEL-scooters-counter-h')">-</button>
+            </div>
+
+        </div>
+
+        <div class="Half-Parked">
+            <h2>Half parked</h2>
+            <div class="box">
+                <h2 id="HP_fiets-counter-h">0</h2>
+                <button class="btn-general" id="HP_fiets-increment-btn" onclick="increment('HP_fiets-counter-h')">+</button>
+                <button class="btn-general" id="HP_fiets-decrement-btn" onclick="decrement('HP_fiets-counter-h')">-</button>
+            </div>
+
+            <div class="box">
+
+                <h2 id="HP_DAAL-fiets-counter-h">0</h2>
+                <button class="btn-general" id="HP_DEEL-fiets-increment-btn" onclick="increment('HP_DAAL-fiets-counter-h')">+</button>
+                <button class="btn-general" id="HP_DEEL-fiets-decrement-btn" onclick="decrement('HP_DAAL-fiets-counter-h')">-</button>
+            </div>
+
+            <div class="box">
+
+                <h2 id="HP_scooters-counter-h">0</h2>
+                <button class="btn-general" id="HP_scooter-increment-btn" onclick="increment('HP_scooters-counter-h')">+</button>
+                <button class="btn-general" id="HP_scooter-decrement-btn" onclick="decrement('HP_scooters-counter-h')">-</button>
+            </div>
+
+            <div class="box">
+
+                <h2 id="HP_DEEL-scooters-counter-h">0</h2>
+                <button class="btn-general" id="HP_DEEL-scooters-increment-btn" onclick="increment('HP_DEEL-scooters-counter-h')">+</button>
+                <button class="btn-general" id="HP_DEEL-scooters-decrement-btn" onclick="decrement('HP_DEEL-scooters-counter-h')">-</button>
+            </div>
+
+        </div>
+
+
+        <div class="Badly-Parked">
+            <h2>Badly parked</h2>
+            <div class="box">
+                <h2 id="BP_fiets-counter-h">0</h2>
+                <button class="btn-general" id="BP_fiets-increment-btn" onclick="increment('BP_fiets-counter-h')">+</button>
+                <button class="btn-general" id="BP_fiets-decrement-btn" onclick="decrement('BP_fiets-counter-h')">-</button>
+            </div>
+
+            <div class="box">
+                <h2 id="BP_DAAL-fiets-counter-h">0</h2>
+                <button class="btn-general" id="BP_DEEL-fiets-increment-btn" onclick="increment('BP_DAAL-fiets-counter-h')">+</button>
+                <button class="btn-general" id="BP_DEEL-fiets-decrement-btn" onclick="decrement('BP_DAAL-fiets-counter-h')">-</button>
+            </div>
+
+            <div class="box">
+
+                <h2 id="BP_scooters-counter-h">0</h2>
+                <button class="btn-general" id="BP_scooter-increment-btn" onclick="increment('BP_scooters-counter-h')">+</button>
+                <button class="btn-general" id="BP_scooter-decrement-btn" onclick="decrement('BP_scooters-counter-h')">-</button>
+            </div>
+
+            <div class="box">
+                <h2 id="BP_DEEL-scooters-counter-h">0</h2>
+                <button class="btn-general" id="BP_DEEL-scooters-increment-btn" onclick="increment('BP_DEEL-scooters-counter-h')">+</button>
+                <button class="btn-general" id="BP_DEEL-scooters-decrement-btn" onclick="decrement('BP_DEEL-scooters-counter-h')">-</button>
+            </div>
+
+        </div>
+
+        <button class="btn-general" onclick="save()">SAVE ENTRY</button>
+
+        <table>
+            <tbody id="entry-tabel">
+                <tr>
+                    <th rowspan="2">Segment</th>
+                    <th rowspan="2">Straat</th>
+                    <th colspan="4">WELL-parked</th>
+                    <th colspan="4">HALF-parked</th>
+                    <th colspan="4">BADLY-parked</th>
+                </tr>
+
+                <tr>
+                    <th>FIETS</th>
+                    <th>DEEL-fiets</th>
+                    <th>Scooters</th>
+                    <th>DEEL-scooters</th>
+                    <th>FIETS</th>
+                    <th>DEEL-fiets</th>
+                    <th>Scooters</th>
+                    <th>DEEL-scooters</th>
+                    <th>FIETS</th>
+                    <th>DEEL-fiets</th>
+                    <th>Scooters</th>
+                    <th>DEEL-scooters</th>
+                </tr>
+            </tbody>
+        </table>
+
+        <script src="script.js"></script>
+    </body>
+
+
+</html>
